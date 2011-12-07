@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xmlThemeManager>
+    <xmlTheme id="1">
+        <themeName>out Of the World</themeName>
+        <themePath>outOftheWorld/outOftheWorld.css</themePath>
+    </xmlTheme>
+
+    <xmlTheme id="2">
+        <themeName>palatino Blue waves</themeName>
+        <themePath>palatinoBluewaves/palatinoBluewaves.css</themePath>
+    </xmlTheme>
+
+    <xmlTheme id="3">
+        <themeName>Modified Eggplant</themeName>
+        <themePath>eggPlantModified.css</themePath>
+    </xmlTheme>
+
+    <xmlTheme id="4">
+        <themeName>sweety Green</themeName>
+        <themePath>sweetyGreen/sweetyGreen.css</themePath>
+    </xmlTheme>
+    
+    <xmlTheme id="5">
+        <themeName>blue Comic Waves</themeName>
+        <themePath>blueComicWaves/blueComicWaves.css</themePath>
+    </xmlTheme>
+
+    
+    <xmlTheme id="6">
+        <themeName>clueLess Brown</themeName>
+        <themePath>clueLessBrown/clueLessBrown.css</themePath>
+    </xmlTheme>
+
+    <xmlTheme id="7">
+        <themeName>comic Black Yolk</themeName>
+        <themePath>comicBlackYolk/comicBlackYolk.css</themePath>
+    </xmlTheme>
+
+    <xmlTheme id="8">
+        <themeName>comic world 1</themeName>
+        <themePath>comicworldOne/comicworldOne.css</themePath>
+    </xmlTheme>
+    <xmlTheme id="9">
+        <themeName>comic world 1</themeName>
+        <themePath>comicworldOne/comicworldOne.css</themePath>
+    </xmlTheme>
+    
+    <xmlTheme id="10">
+        <themeName>goldenBrownPeas</themeName>
+        <themePath>goldenBrownPeas/goldenBrownPeas.css</themePath>
+    </xmlTheme>
+
+    <xmlTheme id="11">
+        <themeName>Only cute Brown</themeName>
+        <themePath>OnlycuteBrown/OnlycuteBrown.css</themePath>
+    </xmlTheme>
+    <xmlTheme id="12">
+        <themeName>Only cute Brown</themeName>
+        <themePath>OnlycuteBrown/OnlycuteBrown.css</themePath>
+    </xmlTheme>
+    
+    <xmlTheme id="13">
+        <themeName>palatino Green</themeName>
+        <themePath>palatinoGreen/palatinoGreen.css</themePath>
+    </xmlTheme>
+    
+    <xmlTheme id="14">
+        <themeName>palatino Olive rubs</themeName>
+        <themePath>palatinoOliverubs/palatinoOliverubs.css</themePath>
+    </xmlTheme>
+
+    <xmlTheme id="15">
+        <themeName>pink Things Big</themeName>
+        <themePath>pinkThingsBig/pinkThingsBig.css</themePath>
+    </xmlTheme>
+    <xmlTheme id="16">
+        <themeName>sky Tweet Inspired</themeName>
+        <themePath>skyTweetInspired/skyTweetInspired.css</themePath>
+    </xmlTheme>
+    <xmlTheme id="17">
+        <themeName>Ruby Red</themeName>
+        <themePath>customThemeRed.css</themePath>
+    </xmlTheme>
+
+    <xmlTheme id="18">
+        <themeName>Default Blue</themeName>
+        <themePath>jquery-ui-blue-custom.css</themePath>
+    </xmlTheme>
+
+
+</xmlThemeManager>

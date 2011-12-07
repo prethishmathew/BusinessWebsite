@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <script src="Scripts/jquery-1.3.2.js" type="text/javascript"></script>
+
+    <script src="Scripts/JScript.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+       
+        
+var xmlhttp=null;
+
+alert ($(
+function getKeyBoardCode(e) {
+     
+    if (window.event) {
+        return e.keyCode
+    }
+    else
+        if (e.which) // Netscape/Firefox/Opera
+    {
+        return e.which;
+    }
+
+
+}
+function enterDisable(key2Disable, key2getValue, e) {
+
+    var keyType = getKeyBoardCode(e);
+    if (keyType == 13) {
+        if (window.event) {
+            window.event.returnValue = false;
+            window.event.cancel = true;
+        }
+        else if (e.cancelable) {
+        e.cancelable = false;
+        }
+
+    }
+}
+
+
+function moveKeyBacktoOrgin(cntrlSel, cntrlText, e) { 
+
+// This Code is Copyrighted. Please do not use this code without written permission from the author.
+
+    var keyType
+    if (window.event) {
+        keyType = e.keyCode
+    }
+    else
+        if (e.which) // Netscape/Firefox/Opera
+    {
+        keyType = e.which;
+    }
+
+    //alert(keyType);
+
+    if (document.getElementById(cntrlSel).selectedIndex == 0 && keyType == 38) {
+        document.getElementById(cntrlText).focus();
+
+
+    }
+    
+    //give value to HTML 
+    
+    if (keyType == 13) {
+        document.getElementById(cntrlText).value = document.getElementById(cntrlSel).value;
+        document.getElementById(cntrlText).focus();
+        document.getElementById("txtHint").innerHTML = " "
+     }
+
+}
+
+function movefocustoKey(txtFld,keyVal, e) {
+   
+var keyType
+
+
+    if (window.event) {
+        keyType = e.keyCode
+    }
+    else
+        if (e.which) // Netscape/Firefox/Opera
+    {
+        keyType = e.which;
+    }
+   
+    if (keyType == 40) {
+        document.getElementById(keyVal).focus();
+        document.getElementById(keyVal).selectedIndex = 0;
+        return true;
+     }
+     //    document.getElementById(keyVal).focus();
+     if (keyType == 13) {
+         if (document.getElementById(keyVal)) {
+             document.getElementById(keyVal).selectedIndex = 0;
+             document.getElementById(txtFld).value = document.getElementById(keyVal).value;
+             document.getElementById("txtHint").innerHTML = " ";
+             //alert("hi 1"); 
+         }
+     }
+}
+
+function showHint(fromFld,toFld,charFeild,e,aspUrl) {
+
+var str
+var KeydownReturn
+
+str = document.getElementById(fromFld).value;
+//alert(str + fromFld + toFld + charFeild + e + aspUrl);
+
+if (str.length < 3)
+  {
+      document.getElementById(toFld).innerHTML = "";
+  return;
+}
+
+KeydownReturn = movefocustoKey(fromFld, charFeild, e);
+if (KeydownReturn = false) {return;}
+
+if (window.XMLHttpRequest)
+  {
+  // code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else if (window.ActiveXObject)
+  {
+  // code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+else
+  {
+  alert("Your browser does not support XMLHTTP!");
+  return;
+  }
+
+//var url=aspUrl + "?q=" + str;
+  var url = aspUrl;
+//url = url + "&sid=" + Math.random();
+xmlhttp.open("GET",url,false);
+xmlhttp.send();
+//alert(xmlhttp.responseText);
+document.getElementById(toFld).innerHTML = xmlhttp.responseText;
+
+/*document.getElementById("ajaxSelect").focus();*/
+
+KeydownReturn = movefocustoKey(fromFld, charFeild, e);
+
+
+}
+
+
+</script> 
+    <style type="text/css">
+        #txt1
+        {
+            width: 100px;
+        }
+    </style>
+
+    
+    
+</head>
+
+<body>
+
+
+
+<form action="HTMLPage2.htm" method="post"  >
+ 
+First Name: <input type="text" id="txt1" onkeyup="showHint('txt1','txtHint','ajaxSelect',event,'WebService.asmx/HelloWorld')"
+             onkeypress="enterDisable(this.id,'ajaxSelect',event)"/> 
+<span id="txtHint" style="position: fixed; top: 30px; left: 45px; z-index: 1;"></span>
+
+<div id="divmtl" style="position: relative; top: 40px; left: 30px; z-index: -1;">Suggestion:</div> 
+
+<a  onfocus="return javaAlert()"  onblur="javablur()" href="HTMLPage.htm"  > <span> hi </span> </a>
+
+<a tabindex="0"  onblur="javablur()"  onfocus="return javaAlert()"   >
+hkjkkkjj jkkkkjjkkkk hhhhhhhhhhhhhhhhhhhhhh
+opopopppppppppppppppppppppppppppppppppppp
+</a>
+
+
+
+</form>
+</body>
+</html>

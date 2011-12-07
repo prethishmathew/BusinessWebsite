@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<bizCatInfo>
+  <bizdlts>
+    <bizcat>finance</bizcat>  
+  </bizdlts>
+  <bizdlts>
+    <bizcat>itolutions</bizcat>
+  </bizdlts>
+  <bizdlts>
+    <bizcat>scottrade</bizcat>
+  </bizdlts>
+  <bizdlts>
+    <bizcat>indian restaurants</bizcat>
+  </bizdlts>
+
+  <bizdlts>
+    <bizcat>restaurants</bizcat>
+  </bizdlts>
+
+</bizCatInfo>

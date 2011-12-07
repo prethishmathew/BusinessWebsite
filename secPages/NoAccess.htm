@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Untitled Page</title>
+    <style type="text/css" >
+.discountPageMain
+{
+width:700px; 
+padding:30px; 
+background-color:White ; 
+}
+
+.discountPageMain .leftSide
+{
+    float:left; 
+    text-align:right; 
+    border-right-width:1px; 
+    border-right-style:solid;  
+    border-right-color:#789; 
+    padding-right:3px;
+}
+
+.discountPageMain .mainSide
+{
+    width:50%;  float:left; padding:10px; background-color:White;    
+}
+
+.TimerWrapper
+{
+font-size:12px; text-align:left; color:Green   
+}
+
+.discountPercentSign
+{   float:right; 
+    width:100px; 
+    height:50px; 
+    text-align:center  ;
+    background-repeat:no-repeat; 
+    background-position:top   ;       
+    background-image:url(../Images/bgDealtorq.png); 
+    color:White;
+    color:White; 
+    font-weight:bolder; 
+    font-size:17px;
+ }
+
+ .getDisBtn
+ {
+ float:right;      
+ background-image:url(../Images/bgBtnBlue.png); 
+ background-repeat:no-repeat ; 
+ width:100px; 
+ height:45px; 
+ text-align:center ;
+ color:White; 
+ font-size:18px; 
+ font-family:Arial ; 
+ font-weight:bold; 
+ }
+
+ .getDisBtn:hover
+ {
+  cursor:pointer ; 
+ }
+</style>
+</head>
+<body>
+
+
+<fieldset  class="discountPageMain"   >
+    <div class="leftSide  "   >
+    <img ID="Image1" runat="server" src="../profileImages/galleryPics/profilepic6.png" alt="none"  />
+    <div style="font-size:17px;font-weight:bold"  >
+    <label  style="text-align:right ;  " >Actual Value:</label> $100
+    <label style=" text-align:right ;">You Save:</label>$50
+    <br />
+    <div class="TimerWrapper"  >Time Left: 
+     <div id="countDown" style=" width:200px; border-style:none;    background-color:White;font-size:14px;  " > </div>
+    </div>
+    
+     <div style="clear:both"></div>  
+    </div> 
+    </div>  
+    <div class="mainSide"    >
+    <b style="font-size:17px;   color:Blue;  ">Discount Header</b> 
+    <div class="discountPercentSign"  >
+    <div  style="padding:10px;"   >
+     50% Off
+    </div>
+    </div>
+    <br />
+    <b style="color:#e9ba26" >
+    My Company Name
+    </b>
+    <br /><br />
+    <div  style="color:Black " >
+    Nothing Because this deal is a dummy.
+    Nothing Because this deal is a dummy.
+    Nothing Because this deal is a dummy.
+    Nothing Because this deal is a dummy.
+    <span id="dtlsMore" style="display:none"   >
+    Nothing Because this deal is a dummy.
+    Nothing Because this deal is a dummy.
+    Nothing Because this deal is a dummy.
+    Nothing Because this deal is a dummy.
+    </span>
+    <a id="showDtls" href="#"  >Show More..</a>
+    </div><br />
+    <span>This deal is valid between  28/12/2008 and 29/12/2008 (Both Dates inclusive) </span><br /><br />
+    
+    <div  class="getDisBtn"  style="" > 
+    <div style="padding:10px;  "    > Grab It! </div>
+    </div>
+    <br />
+    <br /><br />
+    <a href="#" style="float:right; font-weight:bold; color:#e9ba26 "  > 23 Sold Out !!</a><br />
+    Fine Print:
+    
+    
+    <div style="font-size:10px">
+    Specials and Discounts brought to you by myRattles.com. Please note that the owner and myRattles.com has the right to cancel any Coupons and discounts without any notice. The owner of the entity has the right to dishonour the Coupons and discounts without any prior notice or Explanations. Please inform the owner of intent to use this coupon before availing any service.
+    </div>  
+     
+    </div> 
+</fieldset>
+
+
+
+ 
+</body>
+</html>

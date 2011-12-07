@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<xmlCreateUserQuestions>
+  <questionSet>
+    <slNo>-</slNo>
+    <securityQuestion>Please Select a Question</securityQuestion>
+  </questionSet>
+<questionSet>
+ <slNo>1</slNo>
+ <securityQuestion>What is your Mother's Maiden name ?</securityQuestion>
+</questionSet>
+
+<questionSet>
+ <slNo>2</slNo>
+ <securityQuestion>What is your first pet's name ?</securityQuestion>
+</questionSet>
+
+    <questionSet>
+        <slNo>3</slNo>
+        <securityQuestion>What was the make of your first vehicle? </securityQuestion>
+    </questionSet>
+    <questionSet>
+        <slNo>4</slNo>
+        <securityQuestion>What color was your first vehicle? </securityQuestion>
+    </questionSet>
+    <questionSet>
+        <slNo>5</slNo>
+        <securityQuestion>
+            What school did you attend for sixth grade?</securityQuestion>
+    </questionSet>
+    <questionSet>
+        <slNo>6</slNo>
+        <securityQuestion>What is your first pet's name ?</securityQuestion>
+    </questionSet>
+    <questionSet>
+        <slNo>7</slNo>
+        <securityQuestion>In what town was your first job? </securityQuestion>
+    </questionSet>
+
+    <questionSet>
+        <slNo>8</slNo>
+        <securityQuestion>
+            What is the name of the street where you grew up?
+        </securityQuestion>
+    </questionSet>
+    <questionSet>
+        <slNo>9</slNo>
+        <securityQuestion>
+        In what town was your first job? 
+        </securityQuestion>
+    </questionSet>
+    <questionSet>
+        <slNo>10</slNo>
+        <securityQuestion>In what town was your first job? </securityQuestion>
+    </questionSet>
+    <questionSet>
+        <slNo>11</slNo>
+        <securityQuestion>In what town was your first job? </securityQuestion>
+    </questionSet>
+
+</xmlCreateUserQuestions>

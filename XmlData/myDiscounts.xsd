@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="myDiscounts"
+    targetNamespace="http://tempuri.org/myDiscounts.xsd"
+    attributeFormDefault="unqualified"
+    elementFormDefault="qualified"
+    xmlns="http://tempuri.org/myDiscounts.xsd"
+    xmlns:mstns="http://tempuri.org/myDiscounts.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+    <xs:element name="myDiscounts">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="discount">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="cpnNumber" type="xs:string"  />
+                            <xs:element name="dateBought" type="xs:date" />
+                            <xs:element name="printsTaken"  type ="xs:unsignedShort "/>
+                            <xs:element name="emailSent" type ="xs:unsignedShort"/>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:unsignedShort" use="required" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
